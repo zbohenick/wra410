@@ -14,7 +14,7 @@ First, I edited the site to use css grids, and added media queries. I also added
 1. Make changes to the background color of a page and a div.
 
 2. Use a new font.
-
+    [Zach] I changed the font to rubik.
 3. Include two images.
 
 4. Use a table to format the Grading Scale on the Assignments page.
