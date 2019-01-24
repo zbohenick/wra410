@@ -9,6 +9,7 @@ If I can't find your changes, I can't give you credit for them
 Revise the following section in your README.md file with a short description of what you've accomplished.
 
 ## Required Changes to WRA 410
+First, I edited the site to use css grids, and added media queries. I also added a hover function for the anchor tags.
 
 1. Make changes to the background color of a page and a div.
 
@@ -23,7 +24,7 @@ Revise the following section in your README.md file with a short description of 
 6. Add navgation to the Schedule webpage.
 
 7. Revise the rows and columns on the Schedule webpage so the information is clearer or prettier.
-
+    [Zach] Added media queries to the grid.
 
 ## Grading Criteria
 

@@ -14,7 +14,12 @@
     .wrapper > div:nth-child(3n+2){
       background: #ddd;
     }
+    @media only screen and (max-width: 900px) {
+        .wrapper {
+            grid-template-columns: 1fr;
+        }
 
+    }
   </style>
 </head>
 <body>
