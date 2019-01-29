@@ -2,6 +2,23 @@
 <head>
   <title>WRA 410</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+      #content {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      img {
+        width: 400px;
+        justify-self: center;
+        align-self: center;
+      }
+      @media (max-width: 600px) {
+        #content {
+            grid-template-columns: 1fr;
+        }
+
+      }
+  
+  </style>
 </head>
 <body>
   <div id = "container">
@@ -18,6 +35,7 @@
           <li><a href="schedule.html">Schedule</a></li>
           <li><a href="assignments.html">Assignments</a></li>
           <li><a href="resources.html">Resources</a></li>
+          <li><a href="groups.html">Groups</a></li>
       </div>
       <div id = "main">
         <h2> Dr. John Monberg </h2>
@@ -26,8 +44,8 @@
         <p> Office Hours: Tu, Tr: 12:00-1:00 and by appointment </p>
         <p><A HREF=" http://jmonberg.msu.domains">Home Page</A> </p>
         <p><a href="https://twitter.com/jmonberg">Twitter: @jmonberg</a> </p>
-
       </div>
+      <img src="./img/1-768x576.jpg" alt="Dr. John Monberg">
     </div>
     <div id = "footer">
       Copyright &copy; 2019 John Monberg

@@ -2,6 +2,23 @@
 <head>
   <title>WRA 410</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+        #content {
+        grid-template-columns: 1fr 3fr 1fr;
+      }
+      img {
+        width: 200px;
+        justify-self: center;
+        align-self: center;
+      }
+      @media (max-width: 600px) {
+        #content {
+            grid-template-columns: 1fr;
+        }
+
+      }
+  </style>
+  
 </head>
 <body>
   <div id = "container">
@@ -18,6 +35,7 @@
           <li><a href="schedule.html">Schedule</a></li>
           <li><a href="assignments.html">Assignments</a></li>
           <li><a class="selected" href="resources.html">Resources</a></li>
+          <li><a href="groups.html">Groups</a></li>
       </div>
       <div id = "main">
         <div>
@@ -58,6 +76,7 @@
 
 
       </div>
+      <img src="./img/proxy.duckduckgo.png" alt="atom text editor logo">
     </div>
     <div id = "footer">
       Copyright &copy; 2019 John Monberg
