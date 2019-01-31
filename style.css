@@ -1,107 +1,202 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 body {
-    background-color: #EEE;
-    font-family: 'Rubik',Helvetica, Arial, sans-serif;
-}
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 
+}
+p {
+    padding: 0;
+    margin:0;
+}
 a {
-  text-decoration: none;
-  color: #B23333;
+    text-decoration: none;
+    color: #3BBB9B;
 }
-
-h1, h2, h3  {
-  margin: 0;
-  padding: 10px;
+a:hover {
+    text-decoration: underline;
 }
-
-#container {
-    background-color: white;
-    width: 100%;
+button {
+    text-decoration: none;
+    color: #3BBB9B;
+    border: none;
+    text-align: right;
+    font-weight: 300;
+    font-size: 12pt;
+    cursor: pointer;
 }
-
+button:hover{
+    text-decoration: underline;
+}
+button:focus {
+    outline:none;
+}
+h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+#header h2 {
+    font-size: 40pt;
+}
+h3 {
+    font-size: 14pt;
+    font-weight: 400;
+}
+h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: grey;
+    letter-spacing: .1em;
+}
 #header {
-    height: 150px;
-    display:grid;
-    align-content: center;
-    color: white;
-    background-color: #18453B;
+    width: 90%;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 20pt;
     text-align: center;
-    padding: 10px;
-}
-
-#content {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  padding: 10px;
-}
-
-#nav {
-  line-height: 2;
-  grid-column: 1/2;
-  padding: 20px;
-}
-
-#nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#nav a:hover {
     color: #18453B;
 }
 
-
-#nav .selected {
-  font-weight: bold;
+#top {
+    width: 90%;
+    margin-top: 22px;
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    color: #18453B;
+    border-bottom: 1px solid #cecece;
 }
-
-#main {
-  grid-column: 2/3;
+#top a {
+    text-align: right;
+    font-weight: 400;
 }
-
-#student-group {
-  margin: 20px;
-  border: 20px;
-  padding: 10px;
-  color: black;
-  text-align: left;
+.title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #cecece;
 }
-.student-group-name {
-  font-weight: 700;
-  font-size: 14pt;
-}
-#student-group a {
-  transition: .4s;
-}
-#student-group a:hover {
-  color: #18453B;
-}
-
-#footer {
-  padding: 10px;
-  background-color: #18453B;
-  color: white;
-  text-align: right;
+.title a {
+    text-align: right;
 }
 .schedule-date {
-  font-weight: bold;
-  color: black;
-  text-align: right;
+   font-weight: 600;
 }
-.schedule-resources {
-  font-weight: lighter;
-  color: black;
-  text-align: left;
+#nav {
+    /*background-color: #18443a;*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 88px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    color: grey;
+    font-weight: 300;
 }
-
-@media (max-width: 600px) {
-  #content {
+#nav img {
+    width: 25%;
+   background-color: #446f6491;
+    border-radius: 25%;
+    padding: 20px;
+    transition: .3s;
+    border:2px solid white;
+}
+#main {
+    padding-top: 44px;
+    display: grid;
+    grid-gap: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact {
+    padding-top: 44px;
+    display: grid;
+    grid-gap: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact img {
+    width: 100%;
+}
+.info {
+    line-height: 2;
+}
+#student-group {
+    display: grid;
     grid-template-columns: 1fr;
-  }
-  #main {
-    grid-column: 1/2;
-  }
+}
+.student-group-name {
+    font-weight: 600;
+    font-size: 14pt;
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 10px;
+}
+#student-group a {
+    padding: 10px;
+}
+.wrapper{
+    background-color: white;
+    width: 95%;
+    border-radius: 25px;
+    border: 1px solid #cecece;
+    margin-left: auto;
+    margin-right: auto;
+  display:grid;
+  grid-template-columns: 1fr;
+}
+.wrapper > div{
+  padding:1em;
+}
+#gpa {
+font-weight: 600;
+text-align: left;
+}
+td {
+    text-align: right;
+}
+table {
+padding: 20px;
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+}
+tr:nth-child(2n) {
+    background-color: #446f6441;
+}
+#footer {
+    text-align: right;
+    padding: 20px;
+    color: grey;
+    margin-top: 44px;
+}
 
+@media only screen and (min-width: 700px) {
+    #content {
+        display:grid;
+        grid-template-columns: 1fr 5fr;
+    }
+    #nav {
+        height: 100px;
+        grid-template-columns: 1fr;
+    }
+    .wrapper {
+        grid-template-columns: 2fr 3fr 2fr;
+    }
+    .title {
+        grid-column: 1/4;
+    }
+    #contact {
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+    }
+    #main {
+        width: 70%;
+    }
 }
